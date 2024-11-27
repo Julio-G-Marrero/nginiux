@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Aside from './components/aside';
+import NominaComponente from './components/nominaComponent';
+import OrdenesCompraComponente from './components/ordenesCompraComponente';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-gray-100">
+      <BrowserRouter>
+        <div class="flex">
+          <Aside/>
+          <body class="flex-1">
+            <Routes>
+              <Route path="/nomina" element={<NominaComponente />} />
+              <Route path="/ordenes" element={<OrdenesCompraComponente />} />
+            </Routes>
+          </body>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
