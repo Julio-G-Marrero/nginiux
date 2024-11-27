@@ -2,7 +2,7 @@ import './App.css';
 import Aside from './components/aside';
 import NominaComponente from './components/nominaComponent';
 import OrdenesCompraComponente from './components/ordenesCompraComponente';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
