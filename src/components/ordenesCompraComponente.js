@@ -35,12 +35,7 @@ function OrdenesCompraComponente() {
           })
           .catch((err) => console.log(err));
     }
-    const formatCurrency = (value) => {
-        return new Intl.NumberFormat('en-US', {
-          style: 'currency',
-          currency: 'USD'
-        }).format(value);
-    };
+
     const formatDate = (dateString) => {
         const date = new Date(dateString);
         return date.toLocaleDateString('es-ES'); // Formato en español
@@ -48,20 +43,20 @@ function OrdenesCompraComponente() {
     console.log(ordenes)
     return(
         <>
-        <h2 class="text-3xl font-bold mb-2">
+        <h2 className="text-3xl font-bold mb-2">
               Buscar Ordenes de compra
             </h2>
         <div className='w-5/5 mx-auto'>
-            <div class="">
-                <div class="container mx-auto p-6 text-left">
-                    <div class="mb-6 w-1/3">
-                        <label for="order-id" class="block text-gray-700 font-bold mb-1">Buscar Orden por ID:</label>
-                        <input type="number" id="order-id" class="shadow appearance-none border rounded w-20 text-center mr-4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="ID"
+            <div className="">
+                <div className="container mx-auto p-6 text-left">
+                    <div className="mb-6 w-1/3">
+                        <label for="order-id" className="block text-gray-700 font-bold mb-1">Buscar Orden por ID:</label>
+                        <input type="number" id="order-id" className="shadow appearance-none border rounded w-20 text-center mr-4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="ID"
                         value={idOrden}
                         min={1}
                         onChange={handleChangeIdOrden}
                         />
-                        <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                        <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                         onClick={buscarOrdenId}>
                             Buscar
                         </button>
@@ -96,7 +91,7 @@ function OrdenesCompraComponente() {
                                     {orden.STATUS ? orden.STATUS : 'Sin Definir'}
                                     </td>
                                     <td className="border border-gray-300 px-4 py-2 max-w-60 overflow">
-                                    {formatCurrency(orden.TOTAL_COSTO)}
+                                        {orden.TOTAL_COSTO}
                                     </td>
                                 </tr>
                             ))}

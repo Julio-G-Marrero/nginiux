@@ -35,18 +35,18 @@ function NominaComponente() {
     }
     return(
         <>
-        <h2 class="text-3xl font-bold mb-6">
+        <h2 className="text-3xl font-bold mb-6">
             Periodos de Nomina
         </h2>
         <div className='w-2/5 mx-auto'>
-            <div class="mb-6 flex justify-center items-center gap-4">
-                <label for="order-id" class=" text-gray-700 font-bold ">Buscar Periodo por ID:</label>
-                <input type="number" id="order-id" class="shadow appearance-none border rounded w-20 text-center py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="ID"
+            <div className="mb-6 flex justify-center items-center gap-4">
+                <label for="order-id" className=" text-gray-700 font-bold ">Buscar Periodo por ID:</label>
+                <input type="number" id="order-id" className="shadow appearance-none border rounded w-20 text-center py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="ID"
                 min={1}
                 value={numeroPeriodo}
                 onChange={handleChangeIdPeriodo}
                 />
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
                 onClick={buscarPeriodoId}
                 >
                     Buscar

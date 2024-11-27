@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App bg-gray-100">
       <BrowserRouter>
-        <div class="flex">
+        <div className="flex">
           <Aside/>
-          <body class="flex-1">
+          <body className="flex-1">
             <Routes>
               <Route path="/nomina" element={<NominaComponente />} />
               <Route path="/ordenes" element={<OrdenesCompraComponente />} />
