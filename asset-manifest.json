@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/nginiux/static/css/main.449ac803.css",
+    "main.js": "/nginiux/static/js/main.ed44caf5.js",
+    "static/js/453.a4ba5e5c.chunk.js": "/nginiux/static/js/453.a4ba5e5c.chunk.js",
+    "static/media/logo.png": "/nginiux/static/media/logo.db486b8f34db0a499f4e.png",
+    "index.html": "/nginiux/index.html",
+    "main.449ac803.css.map": "/nginiux/static/css/main.449ac803.css.map",
+    "main.ed44caf5.js.map": "/nginiux/static/js/main.ed44caf5.js.map",
+    "453.a4ba5e5c.chunk.js.map": "/nginiux/static/js/453.a4ba5e5c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.449ac803.css",
+    "static/js/main.ed44caf5.js"
+  ]
+}
