@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/nginiux/static/css/main.449ac803.css",
-    "main.js": "/nginiux/static/js/main.462d5f9a.js",
+    "main.js": "/nginiux/static/js/main.6f44adcb.js",
     "static/js/453.a4ba5e5c.chunk.js": "/nginiux/static/js/453.a4ba5e5c.chunk.js",
     "static/media/logo.png": "/nginiux/static/media/logo.db486b8f34db0a499f4e.png",
     "index.html": "/nginiux/index.html",
     "main.449ac803.css.map": "/nginiux/static/css/main.449ac803.css.map",
-    "main.462d5f9a.js.map": "/nginiux/static/js/main.462d5f9a.js.map",
+    "main.6f44adcb.js.map": "/nginiux/static/js/main.6f44adcb.js.map",
     "453.a4ba5e5c.chunk.js.map": "/nginiux/static/js/453.a4ba5e5c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.449ac803.css",
-    "static/js/main.462d5f9a.js"
+    "static/js/main.6f44adcb.js"
   ]
 }
