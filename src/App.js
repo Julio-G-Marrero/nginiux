@@ -2,12 +2,12 @@ import './App.css';
 import Aside from './components/aside';
 import NominaComponente from './components/nominaComponent';
 import OrdenesCompraComponente from './components/ordenesCompraComponente';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App bg-gray-100">
-      <BrowserRouter>
+      <HashRouter>
         <div className="flex">
           <Aside />
           <main className="flex-1">
@@ -17,7 +17,7 @@ function App() {
             </Routes>
           </main>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
