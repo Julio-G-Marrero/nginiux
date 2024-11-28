@@ -1,5 +1,5 @@
 const api = ({
-    addressEndpoints: 'http://localhost:4000',
+    addressEndpoints: 'http://34.30.215.90:3000',
 });
 
 export default api;

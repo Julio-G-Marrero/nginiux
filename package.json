@@ -1,6 +1,7 @@
 {
   "name": "nginiux",
   "version": "0.1.0",
+  "homepage": "https://julio-g-marrero.github.io/nginiux/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -20,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx}"
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
     "@eslint/js": "^9.15.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.2",
+    "gh-pages": "^6.2.0",
     "globals": "^15.12.0"
   }
 }
